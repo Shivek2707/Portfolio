@@ -3,7 +3,6 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -34,13 +33,35 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        A Computer Science student passionate about <b>Cybersecurity</b>, <b>Node.js</b>, and <b>C++</b>. 
-        I build secure backend systems and love solving complex algorithmic problems.</span
-      >
+        Cybersecurity professional working across cloud and backend development, with expertise in securing enterprise systems, authentication flows, and resilient architectures. Focused on building scalable, secure solutions while evolving into a holistic security and cloud architect.
+      </span>
     </Fragment>
   </Hero>
 
-  <Note title="Current Focus:" description="Exploring Network Security, Forensics, and Scalable Web Architecture." />
+  <Note title="Core Focus:" description="Building scalable, secure solutions & evolving into a holistic security architect." />
+
+  <Content
+    id="about"
+    columns={1}
+    image={{
+      src: 'https://images.unsplash.com/photo-1507238691140-d94cfe09949ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'About Me Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About Me</h3>
+      <p class="mb-4 text-muted dark:text-slate-400">
+        Passionate about cybersecurity, cloud, and backend systems. Skilled in session tracking, RBAC, OSINT automation, and backend persistence.
+      </p>
+      <p class="mb-4 text-muted dark:text-slate-400">
+        Persistent learner who values clarity, documentation, and collaboration, thriving on experimentation and continuous improvement.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 
   <Features2
     title="Skills & Technologies"
@@ -113,7 +134,6 @@ const metadata = {
   </Content>
 
   <Steps
-    id="about"
     title="Education & Certifications"
     items={[
       {
@@ -133,10 +153,6 @@ const metadata = {
         description:
           'Authored an IEEE-format term paper on "Agile Training and Certification Programs: Industry Relevance". Skilled in LaTeX for technical documentation.',
         icon: 'tabler:file-text',
-      },
-      {
-        title: 'Ready for new challenges!',
-        icon: 'tabler:check',
       },
     ]}
     image={{
