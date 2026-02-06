@@ -28,7 +28,7 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image.png', alt: 'Hero Image' }}
   >
     <Fragment slot="title">
-      Hi, I am <span class="text-accent dark:text-white highlight">Shivek</span>
+      Hi, I am <span class="text-accent dark:text-white highlight">Shivek Singh</span>
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -64,6 +64,7 @@ const metadata = {
   </Content>
 
   <Features2
+    id="skills"
     title="Skills & Technologies"
     subtitle="My technical toolkit for development and security."
     items={[
@@ -134,6 +135,7 @@ const metadata = {
   </Content>
 
   <Steps
+    id="certifications"
     title="Education & Certifications"
     items={[
       {
@@ -162,11 +164,25 @@ const metadata = {
   />
 
   <CallToAction
+    id="contact"
     actions={[
       {
         variant: 'primary',
-        text: 'Visit my GitHub',
-        href: 'https://github.com/shivek2707', 
+        text: 'Email Me',
+        href: 'mailto:shiveksingh43@gmail.com',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/shivek-singh2707',
+        target: '_blank',
+        icon: 'tabler:brand-linkedin',
+      },
+      {
+        variant: 'secondary',
+        text: 'GitHub',
+        href: 'https://github.com/shivek2707',
         target: '_blank',
         icon: 'tabler:brand-github',
       },
@@ -177,7 +193,8 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      I am always open to discussing new projects, creative ideas, or opportunities in cybersecurity and development.
+      Open to opportunities in Cybersecurity and Backend Development.<br/>
+      Drop me an email at: <span class="font-bold text-accent">shiveksingh43@gmail.com</span>
     </Fragment>
   </CallToAction>
 </Layout>
