@@ -30,13 +30,11 @@ export const footerData = {
   links: [],
   secondaryLinks: [],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/shivek-singh2707' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/shivek2707' },
+    { ariaLabel: 'Email', icon: 'tabler:mail', href: 'mailto:shiveksingh43@gmail.com' },
   ],
   footNote: `
-    © 2026 Shivek. All rights reserved.
+    © 2026 Shivek Singh. All rights reserved.
   `,
 };
