@@ -7,6 +7,10 @@ export const headerData = {
       href: '#skills',
     },
     {
+      text: 'Education',
+      href: '#education', // Added Education link
+    },
+    {
       text: 'Certifications',
       href: '#certifications',
     },
