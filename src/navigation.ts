@@ -19,7 +19,7 @@ export const headerData = {
       href: '#contact',
     },
   ],
-  actions: [{ text: 'Download CV', href: '/shivek-cv.pdf', target: '_blank' }],
+  actions: [{ text: 'Download CV', href: '/shivek-cv.pdf.pdf', target: '_blank' }],
 };
 
 export const footerData = {
